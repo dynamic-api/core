@@ -5,6 +5,7 @@ class Application {
     constructor() {
         this.controllers = {};
         this.entities = {};
+        this.db = 'default';
     }
     parseRequest(request) {
         return request;

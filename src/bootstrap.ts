@@ -10,6 +10,7 @@ export class Application implements IApplication {
 
     controllers: { [key: string]: BaseController<any> } = {};
     entities: { [key: string]: any } = {};
+    db: string = 'default';
 
     parseRequest(request: any): HttpRequest<any> {
         return request;

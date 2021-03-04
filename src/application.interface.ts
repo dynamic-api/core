@@ -7,6 +7,7 @@ import { ICRUDService } from "./services/crud.service";
 export interface IApplication {
     controllers: { [key: string]: BaseController<any> };
     entities: { [key: string]: any };
+    db: string;
 
     parseRequest(request: any): HttpRequest<any>
     parseResponse(response: HttpResponse<any>): any
