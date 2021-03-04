@@ -1,0 +1,21 @@
+{
+  "name": "@dynamic-api/core",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build && git add . && git commit -am 'auto-commit for publish' && git push origin master",
+    "prepublishOnly": "npm version patch"
+  },
+  "author": "Odda Studio",
+  "license": "ISC",
+  "dependencies": {
+    "change-case": "^4.1.2",
+    "pluralize": "^8.0.0"
+  },
+  "devDependencies": {
+    "@types/pluralize": "0.0.29"
+  }
+}
