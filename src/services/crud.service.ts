@@ -1,4 +1,7 @@
 export interface ICRUDService<T> {
+
+    collection: string;
+
     query<R>(ctx?: any): Promise<R>;
     find(filter: any, fields: string, skip: number, take: number, orderBy: any, includes?: string[], ctx?: any): Promise<T[]>;
     findOne(filter: any, fields: string, includes?: string[], ctx?: any): Promise<T>;
