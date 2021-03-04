@@ -1,6 +1,6 @@
 {
   "name": "@d-api/core",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "types": "index.d.ts",
@@ -14,7 +14,7 @@
   "dependencies": {
     "change-case": "^4.1.2",
     "pluralize": "^8.0.0"
-  }, 
+  },
   "devDependencies": {
     "@types/pluralize": "0.0.29"
   }
