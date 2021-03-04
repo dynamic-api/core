@@ -1,8 +1,8 @@
 export interface ICRUDService<T> {
     query<R>(ctx?: any): Promise<R>;
-    find(filter: any, fields: string[], skip: number, take: number, orderBy: any, includes?: string[], ctx?: any): Promise<T[]>;
-    findOne(filter: any, fields: string[], includes?: string[], ctx?: any): Promise<T>;
-    findById(id: any, fields: string[], includes?: string[], ctx?: any): Promise<T>;
+    find(filter: any, fields: string, skip: number, take: number, orderBy: any, includes?: string[], ctx?: any): Promise<T[]>;
+    findOne(filter: any, fields: string, includes?: string[], ctx?: any): Promise<T>;
+    findById(id: any, fields: string, includes?: string[], ctx?: any): Promise<T>;
     add(entity: T): Promise<T>;
     addMany(entities: T[]): Promise<T[]>;
     updateById(id: any, $set: any, fields: string, includes?: string[], ctx?: any): Promise<T>;
@@ -13,4 +13,4 @@ export interface ICRUDService<T> {
     deleteById(id: any, fields: string, includes?: string[], ctx?: any): Promise<T>;
     deleteOne(filter: any,fields: string, includes?: string[], ctx?: any): Promise<T>;
     deleteMany(filter: any,fields: string, includes?: string[], ctx?: any): Promise<T[]>;
-}
+} 
